@@ -1,4 +1,6 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Sun, 20 Mar 2016 17:29:40 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Terminal.Cheatsheet</title><description>&lt;h2&gt;Terminal terminology&lt;/h2&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Sun, 20 Mar 2016 17:33:49 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Terminal.Cheatsheet</title><description>&lt;p&gt;This is a cheatsheet for basic command line stuff learned in week one of Makers Academy's pre-course.&lt;/p&gt;
+
+&lt;h2&gt;Terminal terminology&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;|&lt;/strong&gt;&lt;br&gt;
 Pipe/Redirect stream &lt;br&gt;
@@ -13,11 +15,9 @@ Standard error &lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;ls&lt;/code&gt;  Lists directory content&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;ls –l –A&lt;/code&gt;  Using two switches (L for long format and A for all files hidden files are part of it)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ls –l –A&lt;/code&gt;  Using two switches (L for long format&lt;/p&gt;</description><link>http://localhost:2368/terminal-cheatsheet/</link><guid isPermaLink="false">98775f9e-cb15-4029-a855-33744811631b</guid><category>Cheatsheets</category><dc:creator>Christopher Kummelstedt</dc:creator><pubDate>Sun, 20 Mar 2016 17:27:31 GMT</pubDate><content:encoded>&lt;p&gt;This is a cheatsheet for basic command line stuff learned in week one of Makers Academy's pre-course.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;cd ~/…&lt;/code&gt;  Changes folder&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;whoami&lt;/code&gt;  Identifies user&lt;/p&gt;</description><link>http://localhost:2368/terminal-cheatsheet/</link><guid isPermaLink="false">98775f9e-cb15-4029-a855-33744811631b</guid><category>Cheatsheets</category><dc:creator>Christopher Kummelstedt</dc:creator><pubDate>Sun, 20 Mar 2016 17:27:31 GMT</pubDate><content:encoded>&lt;h2&gt;Terminal terminology&lt;/h2&gt;
+&lt;h2&gt;Terminal terminology&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;|&lt;/strong&gt;&lt;br&gt;
 Pipe/Redirect stream &lt;br&gt;
@@ -168,7 +168,9 @@ Shebang; tells computer what interpreter to use &lt;/p&gt;
 &lt;li&gt;&lt;code&gt;:w&lt;/code&gt; (write)  &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;:q&lt;/code&gt; (quit)  &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;:q!&lt;/code&gt; (quit without saving) &lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title>Ghost.Cheatsheet</title><description>&lt;p&gt;&lt;strong&gt;Getting started&lt;/strong&gt;&lt;/p&gt;
+&lt;/ol&gt;</content:encoded></item><item><title>Ghost Cheatsheet</title><description>&lt;p&gt;This is a cheatsheet for the blog CMS ghost to help you get started.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Getting started&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;brew install node&lt;/code&gt;&lt;/li&gt;
@@ -192,7 +194,9 @@ Shebang; tells computer what interpreter to use &lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;For full: &lt;br&gt;
-&lt;a href="http://usmanjamil.co.uk/blog/setting-up-a-ghost-blog-on-github/#blog"&gt;http://usmanjamil.co.uk/blog/setting-up-a-ghost-blog-on-github/#blog&lt;/a&gt;&lt;/p&gt;</description><link>http://localhost:2368/using-ghost/</link><guid isPermaLink="false">62ec1bd5-14a3-44ee-b55f-9e973beb67c3</guid><category>Cheatsheets</category><dc:creator>Christopher Kummelstedt</dc:creator><pubDate>Sun, 20 Mar 2016 16:21:34 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Getting started&lt;/strong&gt;&lt;/p&gt;
+&lt;a href="http://usmanjamil.co.uk/blog/setting-up-a-ghost-blog-on-github/#blog"&gt;http://usmanjamil.co.uk/blog/setting-up-a-ghost-blog-on-github/#blog&lt;/a&gt;&lt;/p&gt;</description><link>http://localhost:2368/using-ghost/</link><guid isPermaLink="false">62ec1bd5-14a3-44ee-b55f-9e973beb67c3</guid><category>Cheatsheets</category><dc:creator>Christopher Kummelstedt</dc:creator><pubDate>Sun, 20 Mar 2016 16:21:34 GMT</pubDate><content:encoded>&lt;p&gt;This is a cheatsheet for the blog CMS ghost to help you get started.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Getting started&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;brew install node&lt;/code&gt;&lt;/li&gt;
@@ -216,13 +220,9 @@ Shebang; tells computer what interpreter to use &lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;For full: &lt;br&gt;
-&lt;a href="http://usmanjamil.co.uk/blog/setting-up-a-ghost-blog-on-github/#blog"&gt;http://usmanjamil.co.uk/blog/setting-up-a-ghost-blog-on-github/#blog&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title>Adventure.Begin</title><description>&lt;p&gt;After one month of Ruby and one week of the pre-course, the world may not ever be the same again. &lt;/p&gt;
+&lt;a href="http://usmanjamil.co.uk/blog/setting-up-a-ghost-blog-on-github/#blog"&gt;http://usmanjamil.co.uk/blog/setting-up-a-ghost-blog-on-github/#blog&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title>Adventure.Begin</title><description>&lt;p&gt;After one month of Ruby and one week of the pre-course, the world may not ever be the same again. Can't wait to rush in, but before I can fully commit, I need to finish at Global Business Labs - the NGO I am currently working for.  &lt;/p&gt;
 
-&lt;p&gt;Can't wait to rush in, but before I can fully commit, I need to finish at Global Business Labs - the NGO I am currently working for.  &lt;/p&gt;
-
-&lt;p&gt;One week in&lt;/p&gt;</description><link>http://localhost:2368/it-has-begun/</link><guid isPermaLink="false">f34f6be6-a988-41b3-8300-92a157028bcc</guid><category>Life</category><dc:creator>Christopher Kummelstedt</dc:creator><pubDate>Sun, 20 Mar 2016 15:59:56 GMT</pubDate><content:encoded>&lt;p&gt;After one month of Ruby and one week of the pre-course, the world may not ever be the same again. &lt;/p&gt;
-
-&lt;p&gt;Can't wait to rush in, but before I can fully commit, I need to finish at Global Business Labs - the NGO I am currently working for.  &lt;/p&gt;
+&lt;p&gt;One week in&lt;/p&gt;</description><link>http://localhost:2368/it-has-begun/</link><guid isPermaLink="false">f34f6be6-a988-41b3-8300-92a157028bcc</guid><category>Life</category><dc:creator>Christopher Kummelstedt</dc:creator><pubDate>Sun, 20 Mar 2016 15:59:56 GMT</pubDate><content:encoded>&lt;p&gt;After one month of Ruby and one week of the pre-course, the world may not ever be the same again. Can't wait to rush in, but before I can fully commit, I need to finish at Global Business Labs - the NGO I am currently working for.  &lt;/p&gt;
 
 &lt;p&gt;One week in Uganda and then I am going all into this new fab coding adventure. &lt;/p&gt;
 
