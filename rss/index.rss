@@ -1,4 +1,52 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Sun, 20 Mar 2016 16:20:48 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Adventure.Begin</title><description>&lt;p&gt;After one month of Ruby and one week of the pre-course, the world may not ever be the same again. &lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Sun, 20 Mar 2016 16:21:41 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Ghost Cheatsheet</title><description>&lt;p&gt;&lt;strong&gt;Getting started&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;brew install node&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;brew install python&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;brew install wget&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pip install buster&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Start a session&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;npm install&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;npm start&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Update blog&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;buster generate&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;buster deploy&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For full: &lt;br&gt;
+&lt;a href="http://usmanjamil.co.uk/blog/setting-up-a-ghost-blog-on-github/#blog"&gt;http://usmanjamil.co.uk/blog/setting-up-a-ghost-blog-on-github/#blog&lt;/a&gt;&lt;/p&gt;</description><link>http://localhost:2368/using-ghost/</link><guid isPermaLink="false">62ec1bd5-14a3-44ee-b55f-9e973beb67c3</guid><category>Cheatsheets</category><dc:creator>Christopher Kummelstedt</dc:creator><pubDate>Sun, 20 Mar 2016 16:21:34 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Getting started&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;brew install node&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;brew install python&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;brew install wget&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pip install buster&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Start a session&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;npm install&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;npm start&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Update blog&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;buster generate&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;buster deploy&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For full: &lt;br&gt;
+&lt;a href="http://usmanjamil.co.uk/blog/setting-up-a-ghost-blog-on-github/#blog"&gt;http://usmanjamil.co.uk/blog/setting-up-a-ghost-blog-on-github/#blog&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title>Adventure.Begin</title><description>&lt;p&gt;After one month of Ruby and one week of the pre-course, the world may not ever be the same again. &lt;/p&gt;
 
 &lt;p&gt;Can't wait to rush in, but before I can fully commit, I need to finish at Global Business Labs - the NGO I am currently working for.  &lt;/p&gt;
 
