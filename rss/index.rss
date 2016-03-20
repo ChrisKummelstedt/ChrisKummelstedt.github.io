@@ -1,4 +1,174 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Sun, 20 Mar 2016 16:21:41 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Ghost Cheatsheet</title><description>&lt;p&gt;&lt;strong&gt;Getting started&lt;/strong&gt;&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Sun, 20 Mar 2016 17:28:34 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Terminal.cheatsheet</title><description>&lt;h2&gt;Terminal terminology&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;|&lt;/strong&gt;&lt;br&gt;
+Pipe/Redirect stream &lt;br&gt;
+&lt;strong&gt;stdin&lt;/strong&gt; &lt;br&gt;
+Standard stream in &lt;br&gt;
+&lt;strong&gt;stdout&lt;/strong&gt; &lt;br&gt;
+Standard stream out &lt;br&gt;
+&lt;strong&gt;stderr&lt;/strong&gt; &lt;br&gt;
+Standard error &lt;/p&gt;
+
+&lt;h2&gt;General Terminal commands&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;ls&lt;/code&gt;  Lists directory content&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ls –l –A&lt;/code&gt;  Using two switches (L for long format and A for all files hidden files are part of it)&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cd ~/…&lt;/code&gt;  Changes folder&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;whoami&lt;/code&gt;  Identifies user&lt;/p&gt;</description><link>http://localhost:2368/terminal-cheatsheet/</link><guid isPermaLink="false">98775f9e-cb15-4029-a855-33744811631b</guid><category>Cheatsheets</category><dc:creator>Christopher Kummelstedt</dc:creator><pubDate>Sun, 20 Mar 2016 17:27:31 GMT</pubDate><content:encoded>&lt;h2&gt;Terminal terminology&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;|&lt;/strong&gt;&lt;br&gt;
+Pipe/Redirect stream &lt;br&gt;
+&lt;strong&gt;stdin&lt;/strong&gt; &lt;br&gt;
+Standard stream in &lt;br&gt;
+&lt;strong&gt;stdout&lt;/strong&gt; &lt;br&gt;
+Standard stream out &lt;br&gt;
+&lt;strong&gt;stderr&lt;/strong&gt; &lt;br&gt;
+Standard error &lt;/p&gt;
+
+&lt;h2&gt;General Terminal commands&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;ls&lt;/code&gt;  Lists directory content&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ls –l –A&lt;/code&gt;  Using two switches (L for long format and A for all files hidden files are part of it)&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cd ~/…&lt;/code&gt;  Changes folder&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;whoami&lt;/code&gt;  Identifies user&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;wc&lt;/code&gt;  Counts lines, words and characters &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;date&lt;/code&gt;  Prints date&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pwd&lt;/code&gt; Print working directory (shows path to current folder) &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;touch NAME&lt;/code&gt; Create a new file with NAME &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;mkdir NAME&lt;/code&gt; Create a new folder with NAME&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;rmdir NAME&lt;/code&gt; Delete a folder with NAME &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;rm NAME&lt;/code&gt; delete a file with NAME &lt;em&gt;use with caution&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;rm –r DIRECTORY&lt;/code&gt; -r (recursively) remove DIRECTORY &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;head -n 20 file&lt;/code&gt;  top 20 rows&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;rm –i&lt;/code&gt;  -i (interactively), i.e. it will ask for each file&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;rm –f&lt;/code&gt;  -f (forced) even write protected files will burn &lt;em&gt;use with caution&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cp OLD NEW&lt;/code&gt;  create copy OLD file as NEW file &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;mv NAME ../&lt;/code&gt;  move file NAME to folder&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cat&lt;/code&gt;  concatenate i.e. combine &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/private/var/log/system.log&lt;/code&gt;  what happened?&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;man ls&lt;/code&gt; brings up the manual for ls&lt;/p&gt;
+
+&lt;h2&gt;Combining terminal commands&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;find . -name "*.txt" –print&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;find all files, starting with the current directory, with any name that ends in .txt and print it to the screen&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;grep WORD *txt&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Search all *txt files and print all that contain WORD&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;|&lt;/code&gt;    &lt;/p&gt;
+
+&lt;p&gt;Redirect stream    &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;find . -name "*.txt" –print | grep WORD&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Find all files, starting with the current directory, with any name that ends that .txt and redirect this stream to grep, grep should in turn display any pwd/file that contains word &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;find . -name "*.txt" –print &amp;gt; list.txt&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Find all files, starting with the current directory, with any name that ends that .txt and create a new file containing this stream, called list.txt&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;find ~ -name "*.txt" -print | grep README | wc –l&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Find all files, starting with the current directory, with any name that ends that .txt, then check which of those contain the word README, then display how many lines (giving us how many files) &lt;/p&gt;
+
+&lt;h2&gt;Permissions&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Types:&lt;/strong&gt; Read, Write, Execute
+&lt;strong&gt;Class:&lt;/strong&gt; User, Group, Others &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ls –l&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You can view this using long format&lt;/p&gt;
+
+&lt;p&gt;This presents the info on permission in the following way &lt;/p&gt;
+
+&lt;p&gt;USER (RWX) – GROUP (RWX) – OTHERS (RWX)&lt;/p&gt;
+
+&lt;p&gt;Changing permissions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;chmod u+w readme.txt&lt;/code&gt;  gives reading permissions to users&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;whoami&lt;/code&gt;  gives user&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Stuff to do with interpreters, paths, env and processes&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;Which ruby&lt;/code&gt; Gives path to ruby interpreter&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;#!&lt;/code&gt;
+Shebang; tells computer what interpreter to use &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;#!/usr/bin/env ruby&lt;/code&gt; Loads the right interpreter for ruby&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;echo $HOME&lt;/code&gt; Gives my home directory&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;echo $PATH&lt;/code&gt; Gives a colon separated list of places the computer will look for programs. &lt;/p&gt;
+
+&lt;p&gt;*NB! All programs that don’t require a shebang, or alternative with similar function, live in a folder specified by path
+*&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Env&lt;/code&gt; Show all key-value pairs in environment &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;export KEY=Value&lt;/code&gt; Set new pair in current terminal session&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;echo $KEY&lt;/code&gt;  Echo’s value&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;export PATH=$PATH:/Users/fluff&lt;/code&gt;  Add another path directory &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;echo "export SEASON=winter" &amp;gt;&amp;gt; ~/.bash_profile&lt;/code&gt; if you want to keep KV pair in your profile (keep permanently)&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;NB! &gt;&gt; means append.&lt;/em&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ps&lt;/code&gt;  processes currently doing something in terminal&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ps x&lt;/code&gt;  all processes (in all windows)&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ps x | grep BASH&lt;/code&gt;  all processes (in all windows) involving BASH&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ps x | grep BASH | wc -l&lt;/code&gt;  makes a list of all processes (in all windows) involving BASH and then counts how many lines are on that list (i.e. how many such processes there are)&lt;/p&gt;
+
+&lt;h2&gt;Basic VIM&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;vi myFile&lt;/code&gt;  create file
+&lt;code&gt;i&lt;/code&gt; start inputting before cursor
+&lt;code&gt;o&lt;/code&gt; open a new line after the current one
+&lt;code&gt;dd&lt;/code&gt;  delete current line and dozens of others&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;how to edit in VIM&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;i&lt;/code&gt; (input)  &lt;/li&gt;
+&lt;li&gt;insert stuff  &lt;/li&gt;
+&lt;li&gt;press esc  &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:w&lt;/code&gt; (write)  &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:q&lt;/code&gt; (quit)  &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:q!&lt;/code&gt; (quit without saving) &lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title>Ghost.Cheatsheet</title><description>&lt;p&gt;&lt;strong&gt;Getting started&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;brew install node&lt;/code&gt;&lt;/li&gt;
