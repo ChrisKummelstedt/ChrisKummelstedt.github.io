@@ -1,4 +1,99 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Sun, 20 Mar 2016 17:36:00 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Terminal.Cheatsheet</title><description>&lt;p&gt;This is a cheatsheet for basic command line stuff learned in week one of Makers Academy's pre-course.&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Mon, 21 Mar 2016 13:14:09 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Week 2: Ruby.Huzzah</title><description>&lt;p&gt;Heading to Uganda, it's 6 am:&lt;/p&gt;
+
+&lt;p&gt;Reviewing command-line and version control this morning, one thing is clear - the BIG MO is here. MO MENTUM. Is it not marvelous with progress? Makes you feel that others things are possible as well. &lt;/p&gt;
+
+&lt;p&gt;I now know enough to use a blog on&lt;/p&gt;</description><link>http://localhost:2368/week-2-ruby-huzzah/</link><guid isPermaLink="false">631bdb6d-3b63-4969-a968-46ce3af4053b</guid><category>Life</category><dc:creator>Christopher Kummelstedt</dc:creator><pubDate>Mon, 21 Mar 2016 06:55:37 GMT</pubDate><content:encoded>&lt;p&gt;Heading to Uganda, it's 6 am:&lt;/p&gt;
+
+&lt;p&gt;Reviewing command-line and version control this morning, one thing is clear - the BIG MO is here. MO MENTUM. Is it not marvelous with progress? Makes you feel that others things are possible as well. &lt;/p&gt;
+
+&lt;p&gt;I now know enough to use a blog on localhost:2368 to create static pages and push them to github using commandline - all terms I had no idea about a week ago. &lt;br&gt;
+&lt;img src="http://localhost:2368/content/images/2016/03/IMG_1694.jpg" alt="Week 2"&gt;&lt;/p&gt;</content:encoded></item><item><title>Versioncontrol.Cheatsheet</title><description>&lt;p&gt;&lt;strong&gt;Check if you have git&lt;/strong&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ git --version&lt;/code&gt;  Check version&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Configure git&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git config --global user.name "your name"&lt;/code&gt;
+Configure username&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git config --global user.email "your email"&lt;/code&gt;        Configure email&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git config --global core.autocrlf input&lt;/code&gt;            Configure ??&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git config --global core.safecrlf true&lt;/code&gt;            Configure ??&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Setting up a git repository&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;mkdir gitDir&lt;/code&gt;&lt;/p&gt;</description><link>http://localhost:2368/versioncontrol-cheatsheet/</link><guid isPermaLink="false">80ec40a1-b258-47af-90e4-c65c6534120b</guid><category>Cheatsheets</category><dc:creator>Christopher Kummelstedt</dc:creator><pubDate>Mon, 21 Mar 2016 05:39:42 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Check if you have git&lt;/strong&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ git --version&lt;/code&gt;  Check version&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Configure git&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git config --global user.name "your name"&lt;/code&gt;
+Configure username&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git config --global user.email "your email"&lt;/code&gt;        Configure email&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git config --global core.autocrlf input&lt;/code&gt;            Configure ??&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git config --global core.safecrlf true&lt;/code&gt;            Configure ??&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Setting up a git repository&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;mkdir gitDir&lt;/code&gt; Create a new directory        &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cd gitDir&lt;/code&gt;Change into it&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;echo "Git is Awesome" &amp;gt; gitText&lt;/code&gt; Create a file&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git init&lt;/code&gt;  Changes current directory to git repo &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Git repo&lt;/code&gt; - creates a hidden directory that tracks changes to files in the directory.&lt;/p&gt;
+
+&lt;p&gt;NB! You should run git init inside the directory where the files for the project you're placing under version control are. &lt;/p&gt;
+
+&lt;p&gt;If you do it somewhere else you can use (rm -rf .git = remove recursively, without prompting) to remove it. &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git add gitText&lt;/code&gt;  Adds file to staging area&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git rm gitText&lt;/code&gt;   Removes a file from staging area&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git commit -m "First commit"&lt;/code&gt; Commit all files in staging area&lt;/p&gt;
+
+&lt;p&gt;Example of success:&lt;/p&gt;
+
+&lt;p&gt;$ git commit -m "First commit"
+[master (root-commit) a1833e4] First commit
+1 file changed, 1 insertion(+) &lt;br&gt;
+create mode 100644 gitText&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git status&lt;/code&gt;
+Gives overview of what happened since last time&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git log&lt;/code&gt; shows a logg&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git checkout a1833e4ef4a1b&lt;/code&gt; change back to commit with hash &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git checkout master&lt;/code&gt;  go back to current master&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Connecting computer with Github repo&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Add a SSH key: &lt;a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/"&gt;https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Create repo using interface &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git remote -v&lt;/code&gt;
+Check if you have any remotes (connections between a local repo and a github repo) &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git remote add origin NEWREPOURL&lt;/code&gt; 
+Add remote &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Git push -u origin master&lt;/code&gt;
+Push master to origin and make it the default action of git push (-u)&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git remote rm origin&lt;/code&gt; 
+Removing a remote&lt;/p&gt;</content:encoded></item><item><title>Commandline.Cheatsheet</title><description>&lt;p&gt;This is a cheatsheet for basic command line stuff learned in week one of Makers Academy's pre-course.&lt;/p&gt;
 
 &lt;h2&gt;Terminal terminology&lt;/h2&gt;
 
@@ -220,9 +315,11 @@ Shebang; tells computer what interpreter to use &lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;For full: &lt;br&gt;
-&lt;a href="http://usmanjamil.co.uk/blog/setting-up-a-ghost-blog-on-github/#blog"&gt;http://usmanjamil.co.uk/blog/setting-up-a-ghost-blog-on-github/#blog&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title>Adventure.Begin</title><description>&lt;p&gt;After one month of Ruby and one week of the pre-course, the world may not ever be the same again. Can't wait to rush in, but before I can fully commit, I need to finish at Global Business Labs - the NGO I am currently working for.  &lt;/p&gt;
+&lt;a href="http://usmanjamil.co.uk/blog/setting-up-a-ghost-blog-on-github/#blog"&gt;http://usmanjamil.co.uk/blog/setting-up-a-ghost-blog-on-github/#blog&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title>Week 1: Adventure.Begin</title><description>&lt;p&gt;First week was about command line and version control.&lt;/p&gt;
 
-&lt;p&gt;One week in&lt;/p&gt;</description><link>http://localhost:2368/it-has-begun/</link><guid isPermaLink="false">f34f6be6-a988-41b3-8300-92a157028bcc</guid><category>Life</category><dc:creator>Christopher Kummelstedt</dc:creator><pubDate>Sun, 20 Mar 2016 15:59:56 GMT</pubDate><content:encoded>&lt;p&gt;After one month of Ruby and one week of the pre-course, the world may not ever be the same again. Can't wait to rush in, but before I can fully commit, I need to finish at Global Business Labs - the NGO I am currently working for.  &lt;/p&gt;
+&lt;p&gt;After one month of Ruby and one week of the pre-course, the world may not ever be the same again. Can't wait to rush in, but before I can fully commit, I need to finish at Global Business Labs - the&lt;/p&gt;</description><link>http://localhost:2368/it-has-begun/</link><guid isPermaLink="false">f34f6be6-a988-41b3-8300-92a157028bcc</guid><category>Life</category><dc:creator>Christopher Kummelstedt</dc:creator><pubDate>Sun, 20 Mar 2016 15:59:56 GMT</pubDate><content:encoded>&lt;p&gt;First week was about command line and version control.&lt;/p&gt;
+
+&lt;p&gt;After one month of Ruby and one week of the pre-course, the world may not ever be the same again. Can't wait to rush in, but before I can fully commit, I need to finish at Global Business Labs - the NGO I am currently working for.  &lt;/p&gt;
 
 &lt;p&gt;One week in Uganda and then I am going all into this new fab coding adventure. &lt;/p&gt;
 
