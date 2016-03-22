@@ -1,4 +1,89 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Tue, 22 Mar 2016 16:03:00 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Markdown.Cheatsheet</title><description>&lt;p&gt;This is the most basic, awesome little language I have encountered. Some, few, things are not that intuitive however:&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Tue, 22 Mar 2016 16:13:21 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Ruby-Kickstart.Takeaways</title><description>&lt;h2&gt;Helpful hints&lt;/h2&gt;  
+
+&lt;p&gt;This post collects everything that I needed to look up during week 2 of Makers Academy. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.2 Float that integer&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If you want a value in float form (i.e. not an integer) you can manipulate it with a float:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;X == 2&lt;/code&gt; &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;X / 1.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;return X&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;</description><link>http://localhost:2368/basicruby-cheatsheet/</link><guid isPermaLink="false">bda5c06b-c93b-4038-985b-27140e70f9ec</guid><dc:creator>Christopher Kummelstedt</dc:creator><pubDate>Tue, 22 Mar 2016 16:12:48 GMT</pubDate><content:encoded>&lt;h2&gt;Helpful hints&lt;/h2&gt;  
+
+&lt;p&gt;This post collects everything that I needed to look up during week 2 of Makers Academy. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.2 Float that integer&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If you want a value in float form (i.e. not an integer) you can manipulate it with a float:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;X == 2&lt;/code&gt; &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;X / 1.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;return X&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Will return 1.0 (rather than 1) &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.3 Equal sign sillyness&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In logical statements you need to use &lt;code&gt;==&lt;/code&gt; - not just &lt;code&gt;=&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.5 Subing parts of a string&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;MyArray = MyString.split(" ")&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Turning a string into an array by splitting it at " " (spaces)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;MyArray.join(" ")&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Turning an array into string by adding " " (spaces) between elements. &lt;/p&gt;
+
+&lt;p&gt;The correct answer uses &lt;code&gt;string.gsub('old', 'new')&lt;/code&gt;. As I forgot about this useful tool I did this &lt;em&gt;strange&lt;/em&gt; thing - first I had some problems changing the array elements to happy/Happy:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;happyString.each do |ss|  
+if ss == "sad"  
+ss = "Happy"  
+elsif ss == "Sad"  
+ss = "Happy"  
+end  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But then I realised that I was using the wrong method, &lt;code&gt;.collect!&lt;/code&gt; does the trick though:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;def add_more_ruby(string)
+
+    happyString = string.split(" ")
+
+    happyString.collect! { |element| (element == "sad") ? "happy" : element}
+    happyString.collect! { |element| (element == "Sad") ? "Happy" : element}
+
+    doneString = happyString.join(" ")
+
+    puts doneString
+
+
+end
+
+add_more_ruby("The clowns were sad.")  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;.collect!&lt;/code&gt; works like this:&lt;/p&gt;
+
+&lt;p&gt;array.collect! {|variable| block } -&gt; a new array that has been processed through block. In the above the block is (element == "sad") ? "happy" : element}. i.e. it asks if the array element is equal to sad, and if it is, it is changed to happy. &lt;/p&gt;
+
+&lt;p&gt;At this point i started to cry real crocodile tears because even after all this odyssey the happy string did not do something magical and clever with period. Hence, back to &lt;code&gt;.gsub&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;string.gsub("sad", "happy").gsub("Sad", "Happy")  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Rake loved it. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.6&lt;/strong&gt;&lt;/p&gt;</content:encoded></item><item><title>Markdown.Cheatsheet</title><description>&lt;p&gt;This is the most basic, awesome little language I have encountered. Some, few, things are not that intuitive however:&lt;/p&gt;
 
 &lt;p&gt;Create a code block by four spaces or ```&lt;/p&gt;
 
