@@ -88,7 +88,7 @@ var enable_pjax = true;
     <meta property="og:description" content="Helpful hints   This post collects everything that I needed to look up during week 2 of Makers Academy.  1.2 Float that integer If you want a value in float form (i.e. not an integer) you can manipulate it with a float: X == 2  X / 1.0 return X">
     <meta property="og:url" content="http://localhost:2368/basicruby-cheatsheet/">
     <meta property="article:published_time" content="2016-03-22T16:12:48.336Z">
-    <meta property="article:modified_time" content="2016-03-22T17:16:10.969Z">
+    <meta property="article:modified_time" content="2016-03-22T19:49:49.947Z">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Ruby-Kickstart.Takeaways">
     <meta name="twitter:description" content="Helpful hints   This post collects everything that I needed to look up during week 2 of Makers Academy.  1.2 Float that integer If you want a value in float form (i.e. not an integer) you can manipulate it with a float: X == 2  X / 1.0 return X">
@@ -107,7 +107,7 @@ var enable_pjax = true;
     "headline": "Ruby-Kickstart.Takeaways",
     "url": "http://localhost:2368/basicruby-cheatsheet/",
     "datePublished": "2016-03-22T16:12:48.336Z",
-    "dateModified": "2016-03-22T17:16:10.969Z",
+    "dateModified": "2016-03-22T19:49:49.947Z",
     "description": "Helpful hints   This post collects everything that I needed to look up during week 2 of Makers Academy.  1.2 Float that integer If you want a value in float form (i.e. not an integer) you can manipulate it with a float: X == 2  X / 1.0 return X"
 }
     </script>
@@ -165,7 +165,7 @@ var enable_pjax = true;
             <ul class="post-meta-list">
               <li class="post-meta-item">
                 <time datetime="2016-03-22" itemprop="datePublished">
-                  an hour ago
+                  4 hours ago
                 </time>
               </li>
               <li class="post-meta-item">
@@ -262,6 +262,8 @@ add_more_ruby("The clowns were sad.")
 
 <p><strong>1.6 More string glory</strong> </p>
 
+<p>My solution (with sage advice from Omar):  </p>
+
 <pre><code>def odds_and_evens(string, return_odds)  
     result = []
     if return_odds
@@ -274,12 +276,93 @@ add_more_ruby("The clowns were sad.")
 end  
 </code></pre>
 
+<p>i.e. </p>
+
 <ol>
-<li>define function  </li>
-<li>create empty array  </li>
-<li>if return odd is true we will split the string into an array, then we will do something nice to each element and add an index  </li>
-<li>We add the value (v) if index (i) is even </li>
+<li>Define function  </li>
+<li>Create empty array (called results)  </li>
+<li>If return odd is true we will split the string into an array, then we will do something nice to each element and add an index  </li>
+<li>We add the value (v) to the empty array called results if index (i) is even  </li>
+<li>Then we finish by joining the array, as this is the last thing in the method, this is what it will return. </li>
 </ol>
+
+<p>Makers Academy's solution is much shorter:</p>
+
+<pre><code>def odds_and_evens(string, return_odds)  
+  to_return = ""
+  string.size.times do |index|
+    next if return_odds &amp;&amp; index.even?
+    next if !return_odds &amp;&amp; index.odd?
+    to_return &lt;&lt; string[index]
+  end
+  to_return
+end  
+</code></pre>
+
+<ol>
+<li>Define function  </li>
+<li>Create an empty string  </li>
+<li>(HAWT!) string.size.times checks how many characters it has and then performs something cool that amount of times  </li>
+<li>Do |index| </li>
+</ol>
+
+<p><strong>1.7 Pesky nills in my string</strong></p>
+
+<p>Again, I thought this was pretty cool:</p>
+
+<pre><code>def pirates_say_arrrrrrrrr(string)  
+    piratespeak = ""
+
+    string.split("").each_with_index {|v, i| piratespeak &lt;&lt; string[i+1] if v == "r" || v == "R"}            
+
+    return piratespeak
+end  
+</code></pre>
+
+<p>Rake did not agree with me. The problem: when you feed it a string where r is at the end, it tries to include nil in the string - giving me this rake error: " no implicit conversion of nil into String". </p>
+
+<p>How then to fix it? Maybe we could do something adding another precondition that i+1 must be smaller than string size?</p>
+
+<pre><code>def pirates_say_arrrrrrrrr(string)  
+    piratespeak = ""
+
+    string.split("").each_with_index {|v, i| piratespeak &lt;&lt; string[i+1] if  i+1 &lt; string.size &amp;&amp; v == "r" || v == "R" }         
+
+    return piratespeak
+end  
+</code></pre>
+
+<p>Yes! it worked. But! its not as cool as:</p>
+
+<pre><code>def pirates_say_arrrrrrrrr(string)  
+  to_return = ""
+  add_next = false
+  string.size.times do |index|
+    current_char = string[index,1] # the second param here tells it to get a str of length 1.
+
+    to_return &lt;&lt; current_char if add_next
+    add_next = (current_char == "r" || current_char == "R")
+  end
+  to_return
+end  
+</code></pre>
+
+<p>Here, the makers masters do the following awesomness:</p>
+
+<ol>
+<li>Define the function  </li>
+<li>Create a new empty string  </li>
+<li>Define the add_next variable and set it to false  </li>
+<li>Create a iterator dealing with index that will run for the length of the string <br>
+4a. Define current character as a string, one in length <br>
+4b. Add the current character to the empty string to be returned after loop IF add next is true <br>
+4c. Then! The geniusness comes into our lives, and boy, what genius it is. As this is a loop they now set check if the current character is r or R. If it is the next time the loop is run and we are back on step 4b, it will add it if the last character was r.  </li>
+<li>Then they just return the now filled string. </li>
+</ol>
+
+<p>Voila! What glory! </p>
+
+<p>However, I am not sure that is better than mine? Turns out it is: runs 0.00002 seconds faster. Bet it is because I check to make sure i + 1 is not longer than the full string each time a character is checked. </p>
           </div>
           <footer class="post-footer">
             <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-author">
