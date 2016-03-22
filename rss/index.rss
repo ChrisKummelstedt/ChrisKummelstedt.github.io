@@ -1,4 +1,14 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Mon, 21 Mar 2016 13:14:09 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Week 2: Ruby.Huzzah</title><description>&lt;p&gt;Heading to Uganda, it's 6 am:&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Tue, 22 Mar 2016 16:03:00 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Markdown.Cheatsheet</title><description>&lt;p&gt;This is the most basic, awesome little language I have encountered. Some, few, things are not that intuitive however:&lt;/p&gt;
+
+&lt;p&gt;Create a code block by four spaces or ```&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;``` Code ```  
+&lt;/code&gt;&lt;/pre&gt;</description><link>http://localhost:2368/markdown-cheatsheet/</link><guid isPermaLink="false">baa2ea2d-4352-434f-9057-1a3a4ab5cb57</guid><dc:creator>Christopher Kummelstedt</dc:creator><pubDate>Tue, 22 Mar 2016 15:38:01 GMT</pubDate><content:encoded>&lt;p&gt;This is the most basic, awesome little language I have encountered. Some, few, things are not that intuitive however:&lt;/p&gt;
+
+&lt;p&gt;Create a code block by four spaces or ```&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;``` Code ```  
+&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title>Week 2: Ruby.Huzzah</title><description>&lt;p&gt;Heading to Uganda, it's 6 am:&lt;/p&gt;
 
 &lt;p&gt;Reviewing command-line and version control this morning, one thing is clear - the BIG MO is here. MO MENTUM. Is it not marvelous with progress? Makes you feel that others things are possible as well. &lt;/p&gt;
 
@@ -7,7 +17,7 @@
 &lt;p&gt;Reviewing command-line and version control this morning, one thing is clear - the BIG MO is here. MO MENTUM. Is it not marvelous with progress? Makes you feel that others things are possible as well. &lt;/p&gt;
 
 &lt;p&gt;I now know enough to use a blog on localhost:2368 to create static pages and push them to github using commandline - all terms I had no idea about a week ago. &lt;br&gt;
-&lt;img src="http://localhost:2368/content/images/2016/03/IMG_1694.jpg" alt="Week 2"&gt;&lt;/p&gt;</content:encoded></item><item><title>Versioncontrol.Cheatsheet</title><description>&lt;p&gt;&lt;strong&gt;Check if you have git&lt;/strong&gt; &lt;/p&gt;
+&lt;img src="http://localhost:2368/content/images/2016/03/IMG_1694.jpg" alt="Week 2"&gt;&lt;/p&gt;</content:encoded></item><item><title>VersionControl.Cheatsheet</title><description>&lt;p&gt;&lt;strong&gt;Check if you have git&lt;/strong&gt; &lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;$ git --version&lt;/code&gt;  Check version&lt;/p&gt;
 
@@ -93,7 +103,7 @@ Add remote &lt;/p&gt;
 Push master to origin and make it the default action of git push (-u)&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;git remote rm origin&lt;/code&gt; 
-Removing a remote&lt;/p&gt;</content:encoded></item><item><title>Commandline.Cheatsheet</title><description>&lt;p&gt;This is a cheatsheet for basic command line stuff learned in week one of Makers Academy's pre-course.&lt;/p&gt;
+Removing a remote&lt;/p&gt;</content:encoded></item><item><title>CommandLine.Cheatsheet</title><description>&lt;p&gt;This is a cheatsheet for basic command line stuff learned in week one of Makers Academy's pre-course.&lt;/p&gt;
 
 &lt;h2&gt;Terminal terminology&lt;/h2&gt;
 
