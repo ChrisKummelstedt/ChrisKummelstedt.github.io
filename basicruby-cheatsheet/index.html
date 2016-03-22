@@ -88,7 +88,7 @@ var enable_pjax = true;
     <meta property="og:description" content="Helpful hints   This post collects everything that I needed to look up during week 2 of Makers Academy.  1.2 Float that integer If you want a value in float form (i.e. not an integer) you can manipulate it with a float: X == 2  X / 1.0 return X">
     <meta property="og:url" content="http://localhost:2368/basicruby-cheatsheet/">
     <meta property="article:published_time" content="2016-03-22T16:12:48.336Z">
-    <meta property="article:modified_time" content="2016-03-22T16:12:48.334Z">
+    <meta property="article:modified_time" content="2016-03-22T17:16:10.969Z">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Ruby-Kickstart.Takeaways">
     <meta name="twitter:description" content="Helpful hints   This post collects everything that I needed to look up during week 2 of Makers Academy.  1.2 Float that integer If you want a value in float form (i.e. not an integer) you can manipulate it with a float: X == 2  X / 1.0 return X">
@@ -107,7 +107,7 @@ var enable_pjax = true;
     "headline": "Ruby-Kickstart.Takeaways",
     "url": "http://localhost:2368/basicruby-cheatsheet/",
     "datePublished": "2016-03-22T16:12:48.336Z",
-    "dateModified": "2016-03-22T16:12:48.334Z",
+    "dateModified": "2016-03-22T17:16:10.969Z",
     "description": "Helpful hints   This post collects everything that I needed to look up during week 2 of Makers Academy.  1.2 Float that integer If you want a value in float form (i.e. not an integer) you can manipulate it with a float: X == 2  X / 1.0 return X"
 }
     </script>
@@ -165,7 +165,7 @@ var enable_pjax = true;
             <ul class="post-meta-list">
               <li class="post-meta-item">
                 <time datetime="2016-03-22" itemprop="datePublished">
-                  a few seconds ago
+                  an hour ago
                 </time>
               </li>
               <li class="post-meta-item">
@@ -260,7 +260,26 @@ add_more_ruby("The clowns were sad.")
 
 <p>Rake loved it. </p>
 
-<p><strong>1.6</strong></p>
+<p><strong>1.6 More string glory</strong> </p>
+
+<pre><code>def odds_and_evens(string, return_odds)  
+    result = []
+    if return_odds
+        string.split("").each_with_index { |v, i| result &lt;&lt; v if i.odd?}
+    else
+        string.split("").each_with_index { |v, i| result &lt;&lt; v if i.even?}
+    end
+
+    result.join("") 
+end  
+</code></pre>
+
+<ol>
+<li>define function  </li>
+<li>create empty array  </li>
+<li>if return odd is true we will split the string into an array, then we will do something nice to each element and add an index  </li>
+<li>We add the value (v) if index (i) is even </li>
+</ol>
           </div>
           <footer class="post-footer">
             <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-author">

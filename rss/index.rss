@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Tue, 22 Mar 2016 16:13:21 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Ruby-Kickstart.Takeaways</title><description>&lt;h2&gt;Helpful hints&lt;/h2&gt;  
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Tue, 22 Mar 2016 17:16:25 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Ruby-Kickstart.Takeaways</title><description>&lt;h2&gt;Helpful hints&lt;/h2&gt;  
 
 &lt;p&gt;This post collects everything that I needed to look up during week 2 of Makers Academy. &lt;/p&gt;
 
@@ -83,7 +83,26 @@ add_more_ruby("The clowns were sad.")
 
 &lt;p&gt;Rake loved it. &lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;1.6&lt;/strong&gt;&lt;/p&gt;</content:encoded></item><item><title>Markdown.Cheatsheet</title><description>&lt;p&gt;This is the most basic, awesome little language I have encountered. Some, few, things are not that intuitive however:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1.6 More string glory&lt;/strong&gt; &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;def odds_and_evens(string, return_odds)  
+    result = []
+    if return_odds
+        string.split("").each_with_index { |v, i| result &amp;lt;&amp;lt; v if i.odd?}
+    else
+        string.split("").each_with_index { |v, i| result &amp;lt;&amp;lt; v if i.even?}
+    end
+
+    result.join("") 
+end  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;define function  &lt;/li&gt;
+&lt;li&gt;create empty array  &lt;/li&gt;
+&lt;li&gt;if return odd is true we will split the string into an array, then we will do something nice to each element and add an index  &lt;/li&gt;
+&lt;li&gt;We add the value (v) if index (i) is even &lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title>Markdown.Cheatsheet</title><description>&lt;p&gt;This is the most basic, awesome little language I have encountered. Some, few, things are not that intuitive however:&lt;/p&gt;
 
 &lt;p&gt;Create a code block by four spaces or ```&lt;/p&gt;
 
