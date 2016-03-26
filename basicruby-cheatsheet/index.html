@@ -49,7 +49,7 @@
     <link href="http://fonts.googleapis.com/" rel="dns-prefetch">
     <link href="http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic%7COpen+Sans:700,400&amp;subset=latin,latin-ext" rel="stylesheet">
 
-    <link rel="stylesheet" href="../assets/css/main.min.css?v=392298cdbf">
+    <link rel="stylesheet" href="../assets/css/main.min.css?v=4b51ca9145">
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript">
@@ -77,7 +77,7 @@ var enable_pjax = true;
       GHOSTIUM.enablePjax = typeof enable_pjax !== 'undefined' ? enable_pjax : true;
     </script>
 
-    <script src="../assets/js/head-scripts.min.js?v=392298cdbf"></script>
+    <script src="../assets/js/head-scripts.min.js?v=4b51ca9145"></script>
 
     <link rel="canonical" href="index.html">
     <meta name="referrer" content="origin">
@@ -85,13 +85,13 @@ var enable_pjax = true;
     <meta property="og:site_name" content="Trivselministeriet">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Ruby-Kickstart.Takeaways">
-    <meta property="og:description" content="Helpful hints   This post collects everything that I needed to look up during week 2 of Makers Academy.  1.2 Float that integer If you want a value in float form (i.e. not an integer) you can manipulate it with a float: X == 2  X / 1.0 return X">
+    <meta property="og:description" content='Some background   Matz wrote Ruby in 1995. Paradigms are the basic choices you make when designing a source code. For ruby they are procedural, object oriented and functional. OO (object oriented) = "paradigm based on the concept of "objects", which may contain data, in the form of fields, often known as'>
     <meta property="og:url" content="http://localhost:2368/basicruby-cheatsheet/">
     <meta property="article:published_time" content="2016-03-22T16:12:48.336Z">
-    <meta property="article:modified_time" content="2016-03-22T19:49:49.947Z">
+    <meta property="article:modified_time" content="2016-03-26T08:57:48.899Z">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Ruby-Kickstart.Takeaways">
-    <meta name="twitter:description" content="Helpful hints   This post collects everything that I needed to look up during week 2 of Makers Academy.  1.2 Float that integer If you want a value in float form (i.e. not an integer) you can manipulate it with a float: X == 2  X / 1.0 return X">
+    <meta name="twitter:description" content='Some background   Matz wrote Ruby in 1995. Paradigms are the basic choices you make when designing a source code. For ruby they are procedural, object oriented and functional. OO (object oriented) = "paradigm based on the concept of "objects", which may contain data, in the form of fields, often known as'>
     <meta name="twitter:url" content="http://localhost:2368/basicruby-cheatsheet/">
     
     <script type="application/ld+json">
@@ -107,8 +107,8 @@ var enable_pjax = true;
     "headline": "Ruby-Kickstart.Takeaways",
     "url": "http://localhost:2368/basicruby-cheatsheet/",
     "datePublished": "2016-03-22T16:12:48.336Z",
-    "dateModified": "2016-03-22T19:49:49.947Z",
-    "description": "Helpful hints   This post collects everything that I needed to look up during week 2 of Makers Academy.  1.2 Float that integer If you want a value in float form (i.e. not an integer) you can manipulate it with a float: X == 2  X / 1.0 return X"
+    "dateModified": "2016-03-26T08:57:48.899Z",
+    "description": "Some background   Matz wrote Ruby in 1995. Paradigms are the basic choices you make when designing a source code. For ruby they are procedural, object oriented and functional. OO (object oriented) = &quot;paradigm based on the concept of &quot;objects&quot;, which may contain data, in the form of fields, often known as"
 }
     </script>
 
@@ -165,7 +165,7 @@ var enable_pjax = true;
             <ul class="post-meta-list">
               <li class="post-meta-item">
                 <time datetime="2016-03-22" itemprop="datePublished">
-                  4 hours ago
+                  4 days ago
                 </time>
               </li>
               <li class="post-meta-item">
@@ -186,7 +186,17 @@ var enable_pjax = true;
             </div>
           </aside>
           <div itemprop="articleBody" class="post-body">
-            <h2>Helpful hints</h2>  
+            <h2>Some background</h2>  
+
+<ul>
+<li>Matz wrote Ruby in 1995.</li>
+<li>Paradigms are the basic choices you make when designing a source code. For ruby they are procedural, object oriented and functional.</li>
+<li>OO (object oriented) = "paradigm based on the concept of "objects", which may contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods."</li>
+<li>Why Ruby? It hot! Ruby and Rails are firmly entrenched in the job market (and already was by 2011).</li>
+<li>"Whoever holds they keys to programming ends up building the reality in which everyone will live"</li>
+</ul>
+
+<h2>Helpful hints</h2>  
 
 <p>This post collects everything that I needed to look up during week 2 of Makers Academy. </p>
 
@@ -363,6 +373,26 @@ end
 <p>Voila! What glory! </p>
 
 <p>However, I am not sure that is better than mine? Turns out it is: runs 0.00002 seconds faster. Bet it is because I check to make sure i + 1 is not longer than the full string each time a character is checked. </p>
+
+<p><strong>2.1 Picking the essence out of strings</strong></p>
+
+<p>Hmm! This looks fun, </p>
+
+<ol>
+<li>Create a new string thats empty, and get user input  </li>
+<li>Split that user input, could use <code>.split(" ")</code> but that feels like cheating.  </li>
+<li>Do some magic to the string  </li>
+<li>Feed the magic into the empty string  </li>
+<li>Return it through stdout </li>
+</ol>
+
+<p>So, now I need to: </p>
+
+<ol>
+<li>Find a way that is not cheating and  </li>
+<li>Review how you ask for a chomp.  </li>
+<li>I also want to learn how you explicitly feed stuff to stout (or somewhere else for that matter).</li>
+</ol>
           </div>
           <footer class="post-footer">
             <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-author">
@@ -423,7 +453,7 @@ end
 
     
 
-    <script src="../assets/js/foot-scripts.min.js?v=392298cdbf"></script>
+    <script src="../assets/js/foot-scripts.min.js?v=4b51ca9145"></script>
 
     <script type="text/javascript">
 

@@ -1,15 +1,336 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Tue, 22 Mar 2016 19:50:12 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Ruby-Kickstart.Takeaways</title><description>&lt;h2&gt;Helpful hints&lt;/h2&gt;  
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Sat, 26 Mar 2016 13:51:24 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Ruby.CheatSheet</title><description>&lt;h2&gt;Session 1 in Ruby-Kickstart&lt;/h2&gt;
 
-&lt;p&gt;This post collects everything that I needed to look up during week 2 of Makers Academy. &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1.2 Float that integer&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;If you want a value in float form (i.e. not an integer) you can manipulate it with a float:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;irb&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;X == 2&lt;/code&gt; &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;X / 1.0&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;return X&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;</description><link>http://localhost:2368/basicruby-cheatsheet/</link><guid isPermaLink="false">bda5c06b-c93b-4038-985b-27140e70f9ec</guid><dc:creator>Christopher Kummelstedt</dc:creator><pubDate>Tue, 22 Mar 2016 16:12:48 GMT</pubDate><content:encoded>&lt;h2&gt;Helpful hints&lt;/h2&gt;  
+&lt;li&gt;&lt;code&gt;irb -f&lt;/code&gt; play! &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Super Basics&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;#&lt;/code&gt; "This is a comment"&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;name = thing&lt;/code&gt; declare variable, can be changed later in the script. &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;array = []&lt;/code&gt; declare an array &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;defined? variable&lt;/code&gt; =&gt; local variable, global variable, no&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.object_id&lt;/code&gt; =&gt; numbered ID of object&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.class.ancenstors&lt;/code&gt;=&gt; hierarchical class taxonomy&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nil&lt;/code&gt; non-object object&lt;/li&gt;&lt;/ul&gt;</description><link>http://localhost:2368/ruby-cheatsheet/</link><guid isPermaLink="false">3bb49e1f-2479-4340-8be1-2938521eebcd</guid><category>Cheatsheets</category><category>Ruby</category><dc:creator>Christopher Kummelstedt</dc:creator><pubDate>Sat, 26 Mar 2016 09:13:42 GMT</pubDate><content:encoded>&lt;h2&gt;Session 1 in Ruby-Kickstart&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;irb&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;irb -f&lt;/code&gt; play! &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Super Basics&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;#&lt;/code&gt; "This is a comment"&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;name = thing&lt;/code&gt; declare variable, can be changed later in the script. &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;array = []&lt;/code&gt; declare an array &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;defined? variable&lt;/code&gt; =&gt; local variable, global variable, no&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.object_id&lt;/code&gt; =&gt; numbered ID of object&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.class.ancenstors&lt;/code&gt;=&gt; hierarchical class taxonomy&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nil&lt;/code&gt; non-object object&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Conversions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;to_f&lt;/code&gt; to float &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;to_i&lt;/code&gt; to integer (truncates remainder, i.e 10.9999 =&gt; 10)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;to_s&lt;/code&gt; to string &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Stdout&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;puts&lt;/code&gt; puts string in stdout (or float or number: any object really)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;p&lt;/code&gt; prints the &lt;em&gt;code&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\n&lt;/code&gt; new line in double quotes &lt;/li&gt;
+&lt;li&gt;NB! &lt;code&gt;\n&lt;/code&gt; not a new line in single quotes &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;"stringy #{code}"&lt;/code&gt; =&gt; adds code to string&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Stdin&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;user_response = gets&lt;/code&gt;, gets string, gets it from stdin&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Naming Convos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;local_variable (snake case)&lt;/li&gt;
+&lt;li&gt;ConstantVariable (camel case)&lt;/li&gt;
+&lt;li&gt;@instance_variable (asperand then snake case)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How to define a method&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;def method_name  
+Code  
+Last object (will be returned)  
+end  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;How to define a method with argument&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;def method_name (argument1, argument2)  
+Code relating to argument1 and argument2  
+Last object (will be returned)  
+end  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Arithmetic&lt;/strong&gt;
+Has operators (you can write beautifully, without unnecessary dots), i.e. 5.+5 =&gt; 10 == 5 + 5 =&gt; 10 &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;+&lt;/code&gt; add &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-&lt;/code&gt; less&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*&lt;/code&gt; multiply&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;%&lt;/code&gt; find remainder aka modulus&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Nb! Can be used with strings&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Logic&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;true.class =&amp;gt; TrueClass  
+false.class =&amp;gt; FalseClass  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.even?&lt;/code&gt; Is this even?&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.odd?&lt;/code&gt; Is this odd? &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;==&lt;/code&gt; Is &lt;em&gt;this&lt;/em&gt; equal to?&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;=&lt;/code&gt; Is equal to&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Nil and numbers: Is this a thing?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;nil&lt;/code&gt; =&gt; fale&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;0&lt;/code&gt; =&gt; false&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;1&lt;/code&gt; =&gt; true &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt; - if A &amp;amp;&amp;amp; B is true =&gt; true&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;||&lt;/code&gt; - if A or/|| is true =&gt; true &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;!false&lt;/code&gt;- is true (aka negate) &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;If / Else&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;if condition is true  
+then
+
+elsif condition is true  
+then
+
+else  
+then
+
+end  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#basic examples 
+
+block if condition 
+
+#other exampels:
+
+block unless condition  
+block if A &amp;amp;&amp;amp; B  
+block if A || B  
+block unless !A || (B &amp;amp;&amp;amp; C)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;Session 2 in Ruby-Kickstart&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Blocks&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Method(argument) {|parameter| parameter * 2}&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Array&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;index = n-1, as such:  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;my_array = [A, B, C]  
+my_array[0] =&amp;gt; A  
+my_array[-1] =&amp;gt; C  
+my_array[0..1] =&amp;gt; [1, B  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;it also works the other way around:  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;my_array[-3] =&amp;gt; A  
+my_array[-4] =&amp;gt; nil  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Iterating over arrays&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;.each: do something to &lt;em&gt;each&lt;/em&gt; element&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;my_array = [0, 1, 2]  
+my_array.each { |variable| method }  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;.map: do something to each element and &lt;em&gt;map&lt;/em&gt; a new array in relation to the old array&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;my_array = [0, 1, 2]  
+my_new_array = my_array.map { |variable| method }  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;.each_slice(n): do something to groups of n variables (but don't map it to a new array)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;result = []  
+my_array = [0, 1, 2, 3]  
+my_array.each_slice { |a, b| result &amp;lt;&amp;lt; [a, b]}  
+result =&amp;gt; [[0, 1],[2, 3]]  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;.each_cons(n): do something to each variables and groups of n consecutive variables (but don't map it to a new array)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;result = []  
+my_array = [0, 1, 2, 3]  
+my_array.each_cons { |a, b| result &amp;lt;&amp;lt; [a, b]}  
+result =&amp;gt; [[0, 1],[1, 2]...]  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;.select: create a new array for any element that passes a test and returns true &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;my_array = [0, 1, 2, 3]  
+my_new_array = my_array.select { |number| number.even?}  
+my_new_array =&amp;gt; [0, 2]  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;.reject: the opposite of select (if returns true does not include)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;my_array = [0, 1, 2, 3]  
+my_new_array = my_array.reject { |number| number.even?}  
+my_new_array =&amp;gt; [1, 3]  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you want to modify the old array, use bang (!) i.e.  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;my_array = [0, 1, 2, 3]  
+my_array.reject! { |number| number.even?}  
+my_array =&amp;gt; [1, 3]  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Add elements to an array:  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;my_array = [0, 1, 2, 3]
+
+my_array + [4, 5]
+
+or 
+
+my_array &amp;lt;&amp;lt; 4  
+my_array &amp;lt;&amp;lt; 5
+
+my_array =&amp;gt; [0, 1, 2, 3, 4, 5]  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Replace elements in an array:  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;my_array = [0, 1, 2, 3]  
+my_array[1] = 'One'  
+my_array = [0, 'One', 2, 3]  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;.delete_at: delete index&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;my_array = [0, 1, 2, 3]  
+my_array.delete at 1  
+my_array = [0, 2, 3]  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;.delete: delete objects that are the same as variable&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;my_array = [0, 1, 2, 3]  
+my_array.delete 2  
+my_array =&amp;gt; [0, 1, 3]  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;.delete: delete objects that are the same as variable&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;my_array = [0, 1, 2, 3]  
+my_array.delete 2  
+my_array =&amp;gt; [0, 1, 3]  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;.insert(n): insert at a n&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;my_array = [0, 1, 2, 3]  
+my_array.insert(1), "fluff"  
+my_array =&amp;gt; [0, 1, fluff, 3]  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;.sort&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;my_array = [2, 4, 3, 1]  
+my_array.sort!  
+my_array =  [1, 2, 3, 4]  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Classes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Classes are objects of the class class.&lt;/p&gt;
+
+&lt;p&gt;Classes are containers for groups of methods associated with each class e.g. String, Hash, Array.&lt;/p&gt;
+
+&lt;p&gt;Class.instance_method 'method' =&gt; Class#method &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Add method to class&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;e.g.  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Name  
+ def method_name 
+  code
+ end
+end  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Instance variables&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Horse  
+def set_color(color)  
+ @color = color
+end
+
+def get_color  
+ @color
+end  
+end
+
+fluffy = Horse.new  
+fluffy.set_color "Brown"  
+fluffy.get_color =&amp;gt; Brown 
+
+fluffy.instance_variables =&amp;gt; [:@color]  
+fluffy.instance_variables_get '@color' =&amp;gt; Brown  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;NB! .new is a method that belongs to class&lt;/p&gt;</content:encoded></item><item><title>Ruby-Kickstart.Takeaways</title><description>&lt;h2&gt;Some background&lt;/h2&gt;  
+
+&lt;ul&gt;
+&lt;li&gt;Matz wrote Ruby in 1995.&lt;/li&gt;
+&lt;li&gt;Paradigms are the basic choices you make when designing a source code. For ruby they are procedural, object oriented and functional.&lt;/li&gt;
+&lt;li&gt;OO (object oriented) = "paradigm based on the concept of "objects", which may contain data, in the form of fields, often known as&lt;/li&gt;&lt;/ul&gt;</description><link>http://localhost:2368/basicruby-cheatsheet/</link><guid isPermaLink="false">bda5c06b-c93b-4038-985b-27140e70f9ec</guid><dc:creator>Christopher Kummelstedt</dc:creator><pubDate>Tue, 22 Mar 2016 16:12:48 GMT</pubDate><content:encoded>&lt;h2&gt;Some background&lt;/h2&gt;  
+
+&lt;ul&gt;
+&lt;li&gt;Matz wrote Ruby in 1995.&lt;/li&gt;
+&lt;li&gt;Paradigms are the basic choices you make when designing a source code. For ruby they are procedural, object oriented and functional.&lt;/li&gt;
+&lt;li&gt;OO (object oriented) = "paradigm based on the concept of "objects", which may contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods."&lt;/li&gt;
+&lt;li&gt;Why Ruby? It hot! Ruby and Rails are firmly entrenched in the job market (and already was by 2011).&lt;/li&gt;
+&lt;li&gt;"Whoever holds they keys to programming ends up building the reality in which everyone will live"&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Helpful hints&lt;/h2&gt;  
 
 &lt;p&gt;This post collects everything that I needed to look up during week 2 of Makers Academy. &lt;/p&gt;
 
@@ -185,7 +506,27 @@ end
 
 &lt;p&gt;Voila! What glory! &lt;/p&gt;
 
-&lt;p&gt;However, I am not sure that is better than mine? Turns out it is: runs 0.00002 seconds faster. Bet it is because I check to make sure i + 1 is not longer than the full string each time a character is checked. &lt;/p&gt;</content:encoded></item><item><title>Markdown.Cheatsheet</title><description>&lt;p&gt;This is the most basic, awesome little language I have encountered. Some, few, things are not that intuitive however:&lt;/p&gt;
+&lt;p&gt;However, I am not sure that is better than mine? Turns out it is: runs 0.00002 seconds faster. Bet it is because I check to make sure i + 1 is not longer than the full string each time a character is checked. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2.1 Picking the essence out of strings&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Hmm! This looks fun, &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Create a new string thats empty, and get user input  &lt;/li&gt;
+&lt;li&gt;Split that user input, could use &lt;code&gt;.split(" ")&lt;/code&gt; but that feels like cheating.  &lt;/li&gt;
+&lt;li&gt;Do some magic to the string  &lt;/li&gt;
+&lt;li&gt;Feed the magic into the empty string  &lt;/li&gt;
+&lt;li&gt;Return it through stdout &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So, now I need to: &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Find a way that is not cheating and  &lt;/li&gt;
+&lt;li&gt;Review how you ask for a chomp.  &lt;/li&gt;
+&lt;li&gt;I also want to learn how you explicitly feed stuff to stout (or somewhere else for that matter).&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title>Markdown.Cheatsheet</title><description>&lt;p&gt;This is the most basic, awesome little language I have encountered. Some, few, things are not that intuitive however:&lt;/p&gt;
 
 &lt;p&gt;Create a code block by four spaces or ```&lt;/p&gt;
 

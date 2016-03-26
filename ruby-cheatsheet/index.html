@@ -1,0 +1,580 @@
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Ruby.CheatSheet</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ruby.CheatSheet">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:url" content="http://localhost:2368">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ruby.CheatSheet">  
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="Trivselministeriet">
+
+    <meta itemprop="name" content="Ruby.CheatSheet">
+    <meta itemprop="description" content="">
+
+    <meta name="twitter:site" content="@yourblogtwitter">
+
+<meta name="twitter:creator" content="@yourtwitter">
+
+<meta property="article:author" content="https://www.facebook.com/yourprofile">
+
+<meta property="article:publisher" content="https://www.facebook.com/yourblogprofile">
+
+<meta property="fb:admins" content="">
+
+<meta name="google-site-verification" content="">
+
+<link rel="author" href="https://plus.google.com/yourprofile">
+
+<meta name="theme-color" content="">
+
+    <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="../apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link href="http://fonts.googleapis.com/" rel="dns-prefetch">
+    <link href="http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic%7COpen+Sans:700,400&amp;subset=latin,latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/main.min.css?v=4b51ca9145">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+      var ga_ua = 'UA-XXXXX-X';
+
+var disqus_shortname = 'example';
+
+var enable_pjax = true;
+
+      // Pace Options
+      // ==============
+      window.paceOptions = {
+        catchupTime: 100,
+        minTime: 100,
+        elements: false,
+        restartOnRequestAfter: 500,
+        startOnPageLoad: false
+      }
+
+      // Ghostium Globals
+      // ==============
+      window.GHOSTIUM = {};
+      GHOSTIUM.haveGA = typeof ga_ua !== 'undefined' && ga_ua !== 'UA-XXXXX-X';
+      GHOSTIUM.haveDisqus = typeof disqus_shortname !== 'undefined' && disqus_shortname !== 'example';
+      GHOSTIUM.enablePjax = typeof enable_pjax !== 'undefined' ? enable_pjax : true;
+    </script>
+
+    <script src="../assets/js/head-scripts.min.js?v=4b51ca9145"></script>
+
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="Trivselministeriet">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ruby.CheatSheet">
+    <meta property="og:description" content='Session 1 in Ruby-Kickstart irb irb -f play!  Super Basics # "This is a comment" name = thing declare variable, can be changed later in the script.  array = [] declare an array  defined? variable =&gt; local variable, global variable, no .object_id =&gt; numbered ID of object .class.ancenstors=&gt; hierarchical class taxonomy nil non-object object'>
+    <meta property="og:url" content="http://localhost:2368/ruby-cheatsheet/">
+    <meta property="article:published_time" content="2016-03-26T09:13:42.788Z">
+    <meta property="article:modified_time" content="2016-03-26T13:47:38.427Z">
+    <meta property="article:tag" content="Cheatsheets">
+    <meta property="article:tag" content="Ruby">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ruby.CheatSheet">
+    <meta name="twitter:description" content='Session 1 in Ruby-Kickstart irb irb -f play!  Super Basics # "This is a comment" name = thing declare variable, can be changed later in the script.  array = [] declare an array  defined? variable =&gt; local variable, global variable, no .object_id =&gt; numbered ID of object .class.ancenstors=&gt; hierarchical class taxonomy nil non-object object'>
+    <meta name="twitter:url" content="http://localhost:2368/ruby-cheatsheet/">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Trivselministeriet",
+    "author": {
+        "@type": "Person",
+        "name": "Christopher Kummelstedt",
+        "url": "http://localhost:2368/author/christopher/"
+    },
+    "headline": "Ruby.CheatSheet",
+    "url": "http://localhost:2368/ruby-cheatsheet/",
+    "datePublished": "2016-03-26T09:13:42.788Z",
+    "dateModified": "2016-03-26T13:47:38.427Z",
+    "keywords": "Cheatsheets, Ruby",
+    "description": "Session 1 in Ruby-Kickstart irb irb -f play!  Super Basics # &quot;This is a comment&quot; name = thing declare variable, can be changed later in the script.  array = [] declare an array  defined? variable =&gt; local variable, global variable, no .object_id =&gt; numbered ID of object .class.ancenstors=&gt; hierarchical class taxonomy nil non-object object"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7">
+    <link rel="alternate" type="application/rss+xml" title="Trivselministeriet" href="../rss/index.html">
+  </head>
+  <body class="post-template tag-cheatsheets tag-ruby">
+
+    <button data-action="open-drawer" id="drawer-button" class="drawer-button"><i class="fa fa-bars"></i></button>
+<nav tabindex="-1" class="drawer">
+  <div class="drawer-container">
+    <!--.drawer-search(role="search")-->
+    <ul role="navigation" class="drawer-list">
+      
+<li class="drawer-list-item">
+  <a href="../" data-pjax>
+    <i class="fa fa-home"></i>Home
+  </a>
+</li>
+<li class="drawer-list-item">
+  <a href="../rss/index.rss">
+    <i class="fa fa-rss"></i>Subscribe to Feed
+  </a>
+</li>
+<li class="drawer-list-divider">
+<li class="drawer-list-item drawer-list-title">
+  Follow me
+</li>
+<li class="drawer-list-item">
+  <a href="http://twitter.com" target="_blank">
+    <i class="fa fa-twitter"></i>Twitter
+  </a>
+</li>
+<li class="drawer-list-item">
+  <a href="http://github.com" target="_blank">
+    <i class="fa fa-github"></i>Github
+  </a>
+</li>
+    </ul>
+  </div>
+</nav>
+
+    <div class="drawer-overlay"></div>
+    <main id="container" role="main" class="container">
+      <div class="surface">
+        <div class="surface-container">
+          <div data-pjax-container class="content">
+            
+<section class="wrapper wrapper-post">
+  <div class="wrapper-container">
+    <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post post tag-cheatsheets tag-ruby">
+        <section class="post-container">
+          <header class="post-header">
+            <ul class="post-meta-list">
+              <li class="post-meta-item">
+                <time datetime="2016-03-26" itemprop="datePublished">
+                  5 hours ago
+                </time>
+              </li>
+                <li class="post-meta-item">
+                    <a itemprop="articleSection" href="../tag/cheatsheets/" data-pjax>Cheatsheets</a>, 
+                    <a itemprop="keywords" href="../tag/ruby/" data-pjax>Ruby</a> 
+                </li>
+              <li class="post-meta-item">
+                <a href="index.html#disqus_thread" data-disqus-identifier="11">Comments</a>
+              </li>
+            </ul>
+            <h1 itemprop="name headline" class="post-title"><a href="index.html" itemprop="url" data-pjax title="Ruby.CheatSheet">Ruby.CheatSheet</a></h1>
+            <!--h2 itemprop="about" class="post-subtitle"></h2-->
+          </header>
+          <aside class="post-side">
+            <div class="post-author">
+              <div class="post-author-info">
+                <a href="index.html" class="post-author-name">
+                  Christopher Kummelstedt
+                </a>
+                <p class="post-author-bio"></p>
+              </div>
+            </div>
+          </aside>
+          <div itemprop="articleBody" class="post-body">
+            <h2>Session 1 in Ruby-Kickstart</h2>
+
+<p><strong>irb</strong></p>
+
+<ul>
+<li><code>irb -f</code> play! </li>
+</ul>
+
+<p><strong>Super Basics</strong></p>
+
+<ul>
+<li><code>#</code> "This is a comment"</li>
+<li><code>name = thing</code> declare variable, can be changed later in the script. </li>
+<li><code>array = []</code> declare an array </li>
+<li><code>defined? variable</code> =&gt; local variable, global variable, no</li>
+<li><code>.object_id</code> =&gt; numbered ID of object</li>
+<li><code>.class.ancenstors</code>=&gt; hierarchical class taxonomy</li>
+<li><code>nil</code> non-object object</li>
+</ul>
+
+<p><strong>Conversions</strong></p>
+
+<ul>
+<li><code>to_f</code> to float </li>
+<li><code>to_i</code> to integer (truncates remainder, i.e 10.9999 =&gt; 10)</li>
+<li><code>to_s</code> to string </li>
+</ul>
+
+<p><strong>Stdout</strong></p>
+
+<ul>
+<li><code>puts</code> puts string in stdout (or float or number: any object really)</li>
+<li><code>p</code> prints the <em>code</em></li>
+<li><code>\n</code> new line in double quotes </li>
+<li>NB! <code>\n</code> not a new line in single quotes </li>
+<li><code>"stringy #{code}"</code> =&gt; adds code to string</li>
+</ul>
+
+<p><strong>Stdin</strong></p>
+
+<ul>
+<li><code>user_response = gets</code>, gets string, gets it from stdin</li>
+</ul>
+
+<p><strong>Naming Convos</strong></p>
+
+<ul>
+<li>local_variable (snake case)</li>
+<li>ConstantVariable (camel case)</li>
+<li>@instance_variable (asperand then snake case)</li>
+</ul>
+
+<p><strong>How to define a method</strong></p>
+
+<pre><code>def method_name  
+Code  
+Last object (will be returned)  
+end  
+</code></pre>
+
+<p><strong>How to define a method with argument</strong></p>
+
+<pre><code>def method_name (argument1, argument2)  
+Code relating to argument1 and argument2  
+Last object (will be returned)  
+end  
+</code></pre>
+
+<p><strong>Arithmetic</strong>
+Has operators (you can write beautifully, without unnecessary dots), i.e. 5.+5 =&gt; 10 == 5 + 5 =&gt; 10 </p>
+
+<ul>
+<li><code>+</code> add </li>
+<li><code>-</code> less</li>
+<li><code>*</code> multiply</li>
+<li><code>%</code> find remainder aka modulus</li>
+</ul>
+
+<p>Nb! Can be used with strings</p>
+
+<p><strong>Logic</strong></p>
+
+<pre><code>true.class =&gt; TrueClass  
+false.class =&gt; FalseClass  
+</code></pre>
+
+<ul>
+<li><code>.even?</code> Is this even?</li>
+<li><code>.odd?</code> Is this odd? </li>
+<li><code>==</code> Is <em>this</em> equal to?</li>
+<li><code>=</code> Is equal to</li>
+</ul>
+
+<p>Nil and numbers: Is this a thing?</p>
+
+<ul>
+<li><code>nil</code> =&gt; fale</li>
+<li><code>0</code> =&gt; false</li>
+<li><p><code>1</code> =&gt; true </p></li>
+<li><p><code>&amp;&amp;</code> - if A &amp;&amp; B is true =&gt; true</p></li>
+<li><code>||</code> - if A or/|| is true =&gt; true </li>
+<li><code>!false</code>- is true (aka negate) </li>
+</ul>
+
+<p><strong>If / Else</strong></p>
+
+<pre><code>if condition is true  
+then
+
+elsif condition is true  
+then
+
+else  
+then
+
+end  
+</code></pre>
+
+<p>or</p>
+
+<pre><code>#basic examples 
+
+block if condition 
+
+#other exampels:
+
+block unless condition  
+block if A &amp;&amp; B  
+block if A || B  
+block unless !A || (B &amp;&amp; C)
+</code></pre>
+
+<h2>Session 2 in Ruby-Kickstart</h2>
+
+<p><strong>Blocks</strong></p>
+
+<p>Method(argument) {|parameter| parameter * 2}</p>
+
+<p><strong>Array</strong></p>
+
+<p>index = n-1, as such:  </p>
+
+<pre><code>my_array = [A, B, C]  
+my_array[0] =&gt; A  
+my_array[-1] =&gt; C  
+my_array[0..1] =&gt; [1, B  
+</code></pre>
+
+<p>it also works the other way around:  </p>
+
+<pre><code>my_array[-3] =&gt; A  
+my_array[-4] =&gt; nil  
+</code></pre>
+
+<p><strong>Iterating over arrays</strong></p>
+
+<p>.each: do something to <em>each</em> element</p>
+
+<pre><code>my_array = [0, 1, 2]  
+my_array.each { |variable| method }  
+</code></pre>
+
+<p>.map: do something to each element and <em>map</em> a new array in relation to the old array</p>
+
+<pre><code>my_array = [0, 1, 2]  
+my_new_array = my_array.map { |variable| method }  
+</code></pre>
+
+<p>.each_slice(n): do something to groups of n variables (but don't map it to a new array)</p>
+
+<pre><code>result = []  
+my_array = [0, 1, 2, 3]  
+my_array.each_slice { |a, b| result &lt;&lt; [a, b]}  
+result =&gt; [[0, 1],[2, 3]]  
+</code></pre>
+
+<p>.each_cons(n): do something to each variables and groups of n consecutive variables (but don't map it to a new array)</p>
+
+<pre><code>result = []  
+my_array = [0, 1, 2, 3]  
+my_array.each_cons { |a, b| result &lt;&lt; [a, b]}  
+result =&gt; [[0, 1],[1, 2]...]  
+</code></pre>
+
+<p>.select: create a new array for any element that passes a test and returns true </p>
+
+<pre><code>my_array = [0, 1, 2, 3]  
+my_new_array = my_array.select { |number| number.even?}  
+my_new_array =&gt; [0, 2]  
+</code></pre>
+
+<p>.reject: the opposite of select (if returns true does not include)</p>
+
+<pre><code>my_array = [0, 1, 2, 3]  
+my_new_array = my_array.reject { |number| number.even?}  
+my_new_array =&gt; [1, 3]  
+</code></pre>
+
+<p>If you want to modify the old array, use bang (!) i.e.  </p>
+
+<pre><code>my_array = [0, 1, 2, 3]  
+my_array.reject! { |number| number.even?}  
+my_array =&gt; [1, 3]  
+</code></pre>
+
+<p>Add elements to an array:  </p>
+
+<pre><code>my_array = [0, 1, 2, 3]
+
+my_array + [4, 5]
+
+or 
+
+my_array &lt;&lt; 4  
+my_array &lt;&lt; 5
+
+my_array =&gt; [0, 1, 2, 3, 4, 5]  
+</code></pre>
+
+<p>Replace elements in an array:  </p>
+
+<pre><code>my_array = [0, 1, 2, 3]  
+my_array[1] = 'One'  
+my_array = [0, 'One', 2, 3]  
+</code></pre>
+
+<p>.delete_at: delete index</p>
+
+<pre><code>my_array = [0, 1, 2, 3]  
+my_array.delete at 1  
+my_array = [0, 2, 3]  
+</code></pre>
+
+<p>.delete: delete objects that are the same as variable</p>
+
+<pre><code>my_array = [0, 1, 2, 3]  
+my_array.delete 2  
+my_array =&gt; [0, 1, 3]  
+</code></pre>
+
+<p>.delete: delete objects that are the same as variable</p>
+
+<pre><code>my_array = [0, 1, 2, 3]  
+my_array.delete 2  
+my_array =&gt; [0, 1, 3]  
+</code></pre>
+
+<p>.insert(n): insert at a n</p>
+
+<pre><code>my_array = [0, 1, 2, 3]  
+my_array.insert(1), "fluff"  
+my_array =&gt; [0, 1, fluff, 3]  
+</code></pre>
+
+<p>.sort</p>
+
+<pre><code>my_array = [2, 4, 3, 1]  
+my_array.sort!  
+my_array =  [1, 2, 3, 4]  
+</code></pre>
+
+<p><strong>Classes</strong></p>
+
+<p>Classes are objects of the class class.</p>
+
+<p>Classes are containers for groups of methods associated with each class e.g. String, Hash, Array.</p>
+
+<p>Class.instance_method 'method' =&gt; Class#method </p>
+
+<p><strong>Add method to class</strong></p>
+
+<p>e.g.  </p>
+
+<pre><code>class Name  
+ def method_name 
+  code
+ end
+end  
+</code></pre>
+
+<p><strong>Instance variables</strong></p>
+
+<pre><code>class Horse  
+def set_color(color)  
+ @color = color
+end
+
+def get_color  
+ @color
+end  
+end
+
+fluffy = Horse.new  
+fluffy.set_color "Brown"  
+fluffy.get_color =&gt; Brown 
+
+fluffy.instance_variables =&gt; [:@color]  
+fluffy.instance_variables_get '@color' =&gt; Brown  
+</code></pre>
+
+<p>NB! .new is a method that belongs to class</p>
+          </div>
+          <footer class="post-footer">
+            <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-author">
+              <div class="post-author-info">
+                <h4 class="post-footer-heading">Written By</h4>
+                <a href="index.html" itemprop="url" class="post-author-name">
+                  <span itemprop="name">Christopher Kummelstedt</span>
+                </a>
+                <p itemprop="description" class="post-author-bio"></p>
+                <p class="post-info">
+                  <b class="post-info-title">Published on</b>
+                  <time class="post-date">March 26, 2016</time>
+                </p>
+              </div>
+            </div>
+            <div class="post-social">
+              <h4 class="post-footer-heading">Spread the word</h4>
+              <a href="index.html#" data-action="share-twitter"><i class="fa fa-fw fa-lg fa-twitter"></i></a>
+              <a href="index.html#" data-action="share-facebook"><i class="fa fa-fw fa-lg fa-facebook"></i></a>
+              <a href="index.html#" data-action="share-gplus"><i class="fa fa-fw fa-lg fa-google-plus"></i></a>
+            </div>
+          </footer>
+        </section>
+      <section itemprop="comment" class="post-comments">
+        <div id="disqus_thread"></div>
+      </section>
+    </article>
+
+    <footer role="contentinfo" class="footer">
+  <p><small>© 2016. All Rights Reserved.</small></p>
+  <p><small><a href="http://ghostium.oswaldoacauan.com/" target="_blank">Ghostium Theme</a> by <a href="http://twitter.com/oswaldoacauan" target="_blank">@oswaldoacauan</a></small></p>
+  <p><small>Proudly published with <a href="http://ghost.org" target="_blank">Ghost</a></small></p>
+</footer>
+  </div>
+</section>
+
+<script type="text/javascript">
+  if(GHOSTIUM.haveDisqus) {
+    var disqus_identifier = '11';
+
+    if(typeof DISQUS !== 'object') {
+      (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+    }
+  } else {
+    document.querySelector('.post-comments').remove();
+  }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    
+
+    <script src="../assets/js/foot-scripts.min.js?v=4b51ca9145"></script>
+
+    <script type="text/javascript">
+
+      if(GHOSTIUM.haveGA) {
+        (function(g,h,o,s,t,z){g.GoogleAnalyticsObject=s;g[s]||(g[s]=
+        function(){(g[s].q=g[s].q||[]).push(arguments)});g[s].s=+new Date;
+        t=h.createElement(o);z=h.getElementsByTagName(o)[0];
+        t.src='//www.google-analytics.com/analytics.js';
+        z.parentNode.insertBefore(t,z)}(window,document,'script','ga'));
+        ga('create',ga_ua);ga('send','pageview');
+      }
+
+      if(GHOSTIUM.haveDisqus) {
+        (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+      }
+    </script>
+  </body>
