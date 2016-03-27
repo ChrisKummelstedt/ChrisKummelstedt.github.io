@@ -49,7 +49,7 @@
     <link href="http://fonts.googleapis.com/" rel="dns-prefetch">
     <link href="http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic%7COpen+Sans:700,400&amp;subset=latin,latin-ext" rel="stylesheet">
 
-    <link rel="stylesheet" href="../assets/css/main.min.css?v=4b51ca9145">
+    <link rel="stylesheet" href="../assets/css/main.min.css?v=da1b80e017">
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript">
@@ -77,7 +77,7 @@ var enable_pjax = true;
       GHOSTIUM.enablePjax = typeof enable_pjax !== 'undefined' ? enable_pjax : true;
     </script>
 
-    <script src="../assets/js/head-scripts.min.js?v=4b51ca9145"></script>
+    <script src="../assets/js/head-scripts.min.js?v=da1b80e017"></script>
 
     <link rel="canonical" href="index.html">
     <meta name="referrer" content="origin">
@@ -88,7 +88,7 @@ var enable_pjax = true;
     <meta property="og:description" content='Session 1 in Ruby-Kickstart irb irb -f play!  Super Basics # "This is a comment" name = thing declare variable, can be changed later in the script.  array = [] declare an array  defined? variable =&gt; local variable, global variable, no .object_id =&gt; numbered ID of object .class.ancenstors=&gt; hierarchical class taxonomy nil non-object object'>
     <meta property="og:url" content="http://localhost:2368/ruby-cheatsheet/">
     <meta property="article:published_time" content="2016-03-26T09:13:42.788Z">
-    <meta property="article:modified_time" content="2016-03-26T13:47:38.427Z">
+    <meta property="article:modified_time" content="2016-03-26T14:10:42.547Z">
     <meta property="article:tag" content="Cheatsheets">
     <meta property="article:tag" content="Ruby">
     
@@ -110,7 +110,7 @@ var enable_pjax = true;
     "headline": "Ruby.CheatSheet",
     "url": "http://localhost:2368/ruby-cheatsheet/",
     "datePublished": "2016-03-26T09:13:42.788Z",
-    "dateModified": "2016-03-26T13:47:38.427Z",
+    "dateModified": "2016-03-26T14:10:42.547Z",
     "keywords": "Cheatsheets, Ruby",
     "description": "Session 1 in Ruby-Kickstart irb irb -f play!  Super Basics # &quot;This is a comment&quot; name = thing declare variable, can be changed later in the script.  array = [] declare an array  defined? variable =&gt; local variable, global variable, no .object_id =&gt; numbered ID of object .class.ancenstors=&gt; hierarchical class taxonomy nil non-object object"
 }
@@ -169,7 +169,7 @@ var enable_pjax = true;
             <ul class="post-meta-list">
               <li class="post-meta-item">
                 <time datetime="2016-03-26" itemprop="datePublished">
-                  5 hours ago
+                  a day ago
                 </time>
               </li>
                 <li class="post-meta-item">
@@ -461,40 +461,64 @@ my_array =  [1, 2, 3, 4]
 
 <p>Classes are containers for groups of methods associated with each class e.g. String, Hash, Array.</p>
 
-<p>Class.instance_method 'method' =&gt; Class#method </p>
+<p>NB! <code>.new</code> is a method that belongs to class</p>
+
+<p>Print this:</p>
+
+<p><code>Class.instance_method 'method' =&gt; Class#method</code></p>
+
+<p>What object am in?</p>
+
+<p>'self'</p>
+
+<p>e.g.</p>
+
+<p>'Class.new =&gt; Class#new`</p>
 
 <p><strong>Add method to class</strong></p>
 
-<p>e.g.  </p>
-
-<pre><code>class Name  
- def method_name 
-  code
- end
-end  
-</code></pre>
+<p>e.g. <br>
+<code>%</code></p>
 
 <p><strong>Instance variables</strong></p>
 
-<pre><code>class Horse  
-def set_color(color)  
- @color = color
-end
+<p>Basics: <br>
+</p><pre><code>true.class =&gt; TrueClass  
+false.class =&gt; FalseClass  
+</code></pre>
 
-def get_color  
- @color
-end  
+<p>Cool way to use this for storing data in a more pleasing way:</p>
+
+<p><code>.even?</code>
+*Notice the name of the methods here (ruby knows that method=(blue) is the same as method = blue). </p>
+
+<p>Now, you can do this with a class method called <code>attr_accessor</code>:</p>
+
+<pre><code>class Horse  
+ attr_accessor 'color'
 end
 
 fluffy = Horse.new  
-fluffy.set_color "Brown"  
-fluffy.get_color =&gt; Brown 
-
-fluffy.instance_variables =&gt; [:@color]  
-fluffy.instance_variables_get '@color' =&gt; Brown  
+fluffy.color = "Brown"  
+fluffy.color =&gt; Brown  
 </code></pre>
 
-<p>NB! .new is a method that belongs to class</p>
+<p>You can also set default values to instance variables</p>
+
+<pre><code>class Horse  
+ def initalize(color, age)
+     @color = nil 
+     @age = 0  
+ end
+
+ attr_accessor 'color'
+end
+
+fluffy = Horse.new 'Brown, 3'
+
+fluffy.color =&gt; Brown  
+fluffy.age =&gt; 3  
+</code></pre>
           </div>
           <footer class="post-footer">
             <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-author">
@@ -555,7 +579,7 @@ fluffy.instance_variables_get '@color' =&gt; Brown
 
     
 
-    <script src="../assets/js/foot-scripts.min.js?v=4b51ca9145"></script>
+    <script src="../assets/js/foot-scripts.min.js?v=da1b80e017"></script>
 
     <script type="text/javascript">
 

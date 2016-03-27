@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Sat, 26 Mar 2016 13:51:24 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Ruby.CheatSheet</title><description>&lt;h2&gt;Session 1 in Ruby-Kickstart&lt;/h2&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Sun, 27 Mar 2016 09:59:37 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Ruby.CheatSheet</title><description>&lt;h2&gt;Session 1 in Ruby-Kickstart&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;irb&lt;/strong&gt;&lt;/p&gt;
 
@@ -282,40 +282,64 @@ my_array =  [1, 2, 3, 4]
 
 &lt;p&gt;Classes are containers for groups of methods associated with each class e.g. String, Hash, Array.&lt;/p&gt;
 
-&lt;p&gt;Class.instance_method 'method' =&gt; Class#method &lt;/p&gt;
+&lt;p&gt;NB! &lt;code&gt;.new&lt;/code&gt; is a method that belongs to class&lt;/p&gt;
+
+&lt;p&gt;Print this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Class.instance_method 'method' =&amp;gt; Class#method&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;What object am in?&lt;/p&gt;
+
+&lt;p&gt;'self'&lt;/p&gt;
+
+&lt;p&gt;e.g.&lt;/p&gt;
+
+&lt;p&gt;'Class.new =&gt; Class#new`&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Add method to class&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;e.g.  &lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;class Name  
- def method_name 
-  code
- end
-end  
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;e.g. &lt;br&gt;
+&lt;code&gt;%&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Instance variables&lt;/strong&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;class Horse  
-def set_color(color)  
- @color = color
-end
+&lt;p&gt;Basics: &lt;br&gt;
+&lt;pre&gt;&lt;code&gt;true.class =&amp;gt; TrueClass  
+false.class =&amp;gt; FalseClass  
+&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
 
-def get_color  
- @color
-end  
+&lt;p&gt;Cool way to use this for storing data in a more pleasing way:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;.even?&lt;/code&gt;
+*Notice the name of the methods here (ruby knows that method=(blue) is the same as method = blue). &lt;/p&gt;
+
+&lt;p&gt;Now, you can do this with a class method called &lt;code&gt;attr_accessor&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Horse  
+ attr_accessor 'color'
 end
 
 fluffy = Horse.new  
-fluffy.set_color "Brown"  
-fluffy.get_color =&amp;gt; Brown 
-
-fluffy.instance_variables =&amp;gt; [:@color]  
-fluffy.instance_variables_get '@color' =&amp;gt; Brown  
+fluffy.color = "Brown"  
+fluffy.color =&amp;gt; Brown  
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;NB! .new is a method that belongs to class&lt;/p&gt;</content:encoded></item><item><title>Ruby-Kickstart.Takeaways</title><description>&lt;h2&gt;Some background&lt;/h2&gt;  
+&lt;p&gt;You can also set default values to instance variables&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Horse  
+ def initalize(color, age)
+     @color = nil 
+     @age = 0  
+ end
+
+ attr_accessor 'color'
+end
+
+fluffy = Horse.new 'Brown, 3'
+
+fluffy.color =&amp;gt; Brown  
+fluffy.age =&amp;gt; 3  
+&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title>Ruby-Kickstart.Takeaways</title><description>&lt;h2&gt;Some background&lt;/h2&gt;  
 
 &lt;ul&gt;
 &lt;li&gt;Matz wrote Ruby in 1995.&lt;/li&gt;
