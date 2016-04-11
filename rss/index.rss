@@ -1,4 +1,26 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Tue, 29 Mar 2016 22:58:39 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Ruby.CheatSheet</title><description>&lt;h2&gt;Session 1 in Ruby-Kickstart&lt;/h2&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Mon, 11 Apr 2016 10:47:42 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Problem Solving / Escalation</title><description>&lt;p&gt;Phase 1: 5 min - Define the problem &lt;br&gt;
+a) Check output &lt;br&gt;
+b) Verbalize &lt;br&gt;
+c) Define vocabulary &lt;br&gt;
+   (i) Isolate keywords
+   (ii) Isolate error keywords&lt;/p&gt;
+
+&lt;p&gt;Phase 2: 5 min - No developer is an island &lt;br&gt;
+a) Google &lt;br&gt;
+b) Team &lt;br&gt;
+c) Stack overflow &lt;br&gt;
+d) Elder &lt;/p&gt;</description><link>http://localhost:2368/problem-solving-escalation/</link><guid isPermaLink="false">813b0a27-7b64-47cf-9b7f-f97a10676ee1</guid><dc:creator>Christopher Kummelstedt</dc:creator><pubDate>Mon, 11 Apr 2016 10:47:14 GMT</pubDate><content:encoded>&lt;p&gt;Phase 1: 5 min - Define the problem &lt;br&gt;
+a) Check output &lt;br&gt;
+b) Verbalize &lt;br&gt;
+c) Define vocabulary &lt;br&gt;
+   (i) Isolate keywords
+   (ii) Isolate error keywords&lt;/p&gt;
+
+&lt;p&gt;Phase 2: 5 min - No developer is an island &lt;br&gt;
+a) Google &lt;br&gt;
+b) Team &lt;br&gt;
+c) Stack overflow &lt;br&gt;
+d) Elder &lt;/p&gt;</content:encoded></item><item><title>Ruby.CheatSheet</title><description>&lt;h2&gt;Session 1 in Ruby-Kickstart&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;irb&lt;/strong&gt;&lt;/p&gt;
 
