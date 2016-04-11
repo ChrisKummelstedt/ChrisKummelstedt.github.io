@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Mon, 11 Apr 2016 10:58:01 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>New Schedule for Life</title><description>&lt;p&gt;&lt;strong&gt;Morning:&lt;/strong&gt;&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Trivselministeriet</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.7</generator><lastBuildDate>Mon, 11 Apr 2016 11:01:46 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>New Schedule for Life</title><description>&lt;p&gt;&lt;strong&gt;Morning:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Wake up time: &amp;lt; 8.00 am &lt;/li&gt;
@@ -11,7 +11,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;Rigorous pomodoros &lt;/li&gt;
-&lt;li&gt;Lunch meditation for 10 min &lt;/li&gt;
+&lt;li&gt;3 pm: meditation for 10 min &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Evening:&lt;/strong&gt;&lt;/p&gt;
@@ -31,36 +31,44 @@
 
 &lt;ul&gt;
 &lt;li&gt;Rigorous pomodoros &lt;/li&gt;
-&lt;li&gt;Lunch meditation for 10 min &lt;/li&gt;
+&lt;li&gt;3 pm: meditation for 10 min &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Evening:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;No computer. Prepare for Phd, cuddle or meet friends. &lt;/p&gt;
 
-&lt;p&gt;&lt;img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Space_Shuttle_Atlantis_launches_from_KSC_on_STS-132_side_view.jpg" alt="spaceship" title=""&gt;    &lt;/p&gt;</content:encoded></item><item><title>Problem Solving / Escalation</title><description>&lt;p&gt;Phase 1: 5 min - Define the problem &lt;br&gt;
-a) Check output &lt;br&gt;
+&lt;p&gt;&lt;img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Space_Shuttle_Atlantis_launches_from_KSC_on_STS-132_side_view.jpg" alt="spaceship" title=""&gt;    &lt;/p&gt;</content:encoded></item><item><title>Problem Solving / Escalation</title><description>&lt;p&gt;&lt;strong&gt;Phase 1: 5 min - Define the problem&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;a) Check output &lt;br&gt;
 b) Verbalize &lt;br&gt;
 c) Define vocabulary &lt;br&gt;
    (i) Isolate keywords
    (ii) Isolate error keywords&lt;/p&gt;
 
-&lt;p&gt;Phase 2: 5 min - No developer is an island &lt;br&gt;
-a) Google &lt;br&gt;
+&lt;p&gt;&lt;strong&gt;Phase 2: 5 min - No developer is an island&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;a) Google &lt;br&gt;
 b) Team &lt;br&gt;
 c) Stack overflow &lt;br&gt;
-d) Elder &lt;/p&gt;</description><link>http://localhost:2368/problem-solving-escalation/</link><guid isPermaLink="false">813b0a27-7b64-47cf-9b7f-f97a10676ee1</guid><dc:creator>Christopher Kummelstedt</dc:creator><pubDate>Mon, 11 Apr 2016 10:47:14 GMT</pubDate><content:encoded>&lt;p&gt;Phase 1: 5 min - Define the problem &lt;br&gt;
-a) Check output &lt;br&gt;
+d) Elder &lt;/p&gt;
+
+&lt;p&gt;&lt;img src="http://2.bp.blogspot.com/-K8y1g2NlWlo/Ue4wRR26e9I/AAAAAAAAEnE/ZlT9ELxfkHc/s1600/Julie,+Bob,+June,+Elizabeth,+Shelley,+Sybille,+and+Nina+in+labyrinth.jp" alt="Labyrinth"&gt;&lt;/p&gt;</description><link>http://localhost:2368/problem-solving-escalation/</link><guid isPermaLink="false">813b0a27-7b64-47cf-9b7f-f97a10676ee1</guid><dc:creator>Christopher Kummelstedt</dc:creator><pubDate>Mon, 11 Apr 2016 10:47:14 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Phase 1: 5 min - Define the problem&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;a) Check output &lt;br&gt;
 b) Verbalize &lt;br&gt;
 c) Define vocabulary &lt;br&gt;
    (i) Isolate keywords
    (ii) Isolate error keywords&lt;/p&gt;
 
-&lt;p&gt;Phase 2: 5 min - No developer is an island &lt;br&gt;
-a) Google &lt;br&gt;
+&lt;p&gt;&lt;strong&gt;Phase 2: 5 min - No developer is an island&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;a) Google &lt;br&gt;
 b) Team &lt;br&gt;
 c) Stack overflow &lt;br&gt;
-d) Elder &lt;/p&gt;</content:encoded></item><item><title>Ruby.CheatSheet</title><description>&lt;h2&gt;Session 1 in Ruby-Kickstart&lt;/h2&gt;
+d) Elder &lt;/p&gt;
+
+&lt;p&gt;&lt;img src="http://2.bp.blogspot.com/-K8y1g2NlWlo/Ue4wRR26e9I/AAAAAAAAEnE/ZlT9ELxfkHc/s1600/Julie,+Bob,+June,+Elizabeth,+Shelley,+Sybille,+and+Nina+in+labyrinth.jp" alt="Labyrinth"&gt;&lt;/p&gt;</content:encoded></item><item><title>Ruby.CheatSheet</title><description>&lt;h2&gt;Session 1 in Ruby-Kickstart&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;irb&lt;/strong&gt;&lt;/p&gt;
 
